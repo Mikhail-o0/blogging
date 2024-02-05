@@ -1,8 +1,8 @@
 @font-face {
     font-family: "OpenSans";
-    src: url("/fonts/OpenSans-Regular.woff2") format("woff2"),
-    url("/fonts/OpenSans-Regular.woff") format("woff"),
-    url("/fonts/OpenSans-Regular.ttf") format("ttf");
+    src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-Regular.woff") format("woff"),
+    url("../fonts/OpenSans-Regular.ttf") format("ttf");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,9 +10,9 @@
 
 @font-face {
     font-family: "OpenSans";
-    src: url("/fonts/OpenSans-Bold.woff2") format("woff2"),
-    url("/fonts/OpenSans-Bold.woff") format("woff"),
-    url("/fonts/OpenSans-Bold.ttf") format("ttf");
+    src: url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-Bold.woff") format("woff"),
+    url("../fonts/OpenSans-Bold.ttf") format("ttf");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -55,7 +55,7 @@ body {
 
 @media (max-width: 640px) {
     .header {
-        background-image: url("blogging/images/banner-mobile.jpg");
+        background-image: url("../images/banner-mobile.jpg");
         height: 100vh;
     }
     .header::after {
@@ -148,7 +148,7 @@ body {
 }
 @media (min-width: 641px) and (max-width: 1199px) {
     .header {
-        background-image: url("/images/banner-bg-tablet.jpg");
+        background-image: url("../images/banner-bg-tablet.jpg");
         
         
         
@@ -161,7 +161,7 @@ body {
 }
 @media (min-width: 1200px) {
     .header {
-        background-image: url('/images/banner-bg.jpg');
+        background-image: url('../images/banner-bg.jpg');
         
         
     }
