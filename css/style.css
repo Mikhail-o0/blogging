@@ -55,7 +55,7 @@ body {
 
 @media (max-width: 640px) {
     .header {
-        background-image: url("images/banner-mobile.jpg");
+        background-image: url("blogging/images/banner-mobile.jpg");
         height: 100vh;
     }
     .header::after {
