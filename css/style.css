@@ -30,10 +30,7 @@ body {
 .header {
     background-repeat: no-repeat;
     background-size: cover;
-    color: #ffffff;
-    
-    
-    
+    color: #ffffff; 
 }
 
 .header::after {
@@ -291,6 +288,7 @@ body {
         font-weight: bold;
         text-transform: uppercase;
         position: relative;
+        margin-bottom: 0;
     }
     .article-trend_title::after {
         content: "";
@@ -364,3 +362,98 @@ body {
     }
 }
 
+@media screen and (min-width: 641px) and (max-width: 1200px) {
+    .article {
+        display: flex; 
+        flex-wrap: wrap;
+        
+    }
+
+    .article-trend {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 13vw;
+    }
+    .article-trend_title {
+        font-size: 1.125rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        position: relative;
+    }
+    .article-trend_title::after {
+        content: "";
+        width: 67px;
+        height: 3px;
+        background: #e1d9bd;
+        position: absolute;
+        right: 40px;
+        top: 35px;
+        
+    }
+    .section-trend {
+        
+    }
+    .section-trend:nth-child(2n + 3) {
+        margin-left: 0.5%;
+    }
+    .section-trend_content {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: center;
+        
+    }
+
+    .section-trend_image {
+        position: relative;
+    }
+
+    .images-trend { 
+        
+        width: 49.75vw;
+        height: 32vw;
+    }
+    .section-trend_image::after {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        content: " ";
+        background-color: #000000;
+        position: absolute;
+        height: 32vw;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.6;
+    }
+
+    .section-trend_main {
+        position: absolute;
+        border: 3px solid #8e825b;
+        display: flex;
+        flex-direction: column;
+        width: 45vw;
+        padding: 5vw 4vw;
+        bottom: 17px;
+    }
+
+    .section-trend-category {
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #b59f5b;
+        word-spacing: 18px;
+    }
+
+    .section-trend_info {
+        font-size: 1.063rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-transform: uppercase;
+        
+    }
+}
