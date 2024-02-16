@@ -17,6 +17,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -366,7 +367,6 @@ body {
     .article {
         display: flex; 
         flex-wrap: wrap;
-        
     }
 
     .article-trend {
@@ -393,12 +393,10 @@ body {
         top: 35px;
         
     }
-    .section-trend {
-        
-    }
     .section-trend:nth-child(2n + 3) {
         margin-left: 0.5%;
     }
+
     .section-trend_content {
         display: flex;
         flex-wrap: wrap;
@@ -457,3 +455,99 @@ body {
         
     }
 }
+@media (min-width: 1200px) {
+    .article {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    .article-trend {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 15vh;
+    }
+    .article-trend_title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        position: relative;
+    }
+
+    .article-trend_title::after {
+        content: "";
+        width: 67px;
+        height: 3px;
+        background: #e1d9bd;
+        position: absolute;
+        right: 57px;
+        top: 37px;
+        
+    }
+
+    
+    .section-trend_content {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        
+
+    }
+    .section-trend_image {
+        position: relative;
+        
+        
+    }
+    .images-trend {
+        width: 24.5vw;
+        height: 320px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+    }
+    .section-trend_image::after {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        content: " ";
+        background-color: #000000;
+        position: absolute;
+        width: 24.5vw;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.6;
+    }
+    .section-trend_main {
+        position: absolute;
+        border: 3px solid #8e825b;
+        display: flex;
+        flex-direction: column;
+        width: 22vw;
+        padding: 2vw 1vw;
+        bottom: 17px;
+
+    }
+    .section-trend-category {
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #b59f5b;
+        word-spacing: 18px;
+
+    }
+    .section-trend_info {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #ffffff;
+        text-transform: uppercase;
+
+    }
+}
+    
