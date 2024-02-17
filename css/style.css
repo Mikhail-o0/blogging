@@ -457,7 +457,7 @@ body {
 }
 @media (min-width: 1200px) {
     .article {
-        width: 100%;
+        max-width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -488,7 +488,9 @@ body {
         top: 37px;
         
     }
-
+    .section-trend {
+      
+    }
     
     .section-trend_content {
         display: flex;
@@ -504,7 +506,6 @@ body {
     }
     .images-trend {
         width: 24.5vw;
-        height: 320px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -550,4 +551,100 @@ body {
 
     }
 }
+@media (max-width: 640px) {
+    .news-list {
+        margin: 45px 15px 0; 
+    }
+    .image-post {
+        width: 100%;
+        
+    }
+    .description-news_post {
+        margin-top: 15px;
+    }
+    .description-news_post a {
+        text-decoration: none;
+    }
+    .news-post_category {
     
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #b59f5b;
+        word-spacing: 20px;
+    }
+    .nows-post_title {
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #0f0d0e;
+    }
+    .data-autor_style {
+        margin: 20px 0;
+    }
+    .data {
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: #888888;
+    }
+    .autor {
+        padding-left: 15px;
+        font-size: 0.75rem;
+        font-weight: bold;
+        color: #000000;
+    }
+    .text-description-post {
+        font-size: 0.875rem;
+        font-weight: 400;
+    }
+    .line-post {
+        position: relative;
+        border: 3px solid #eeeeee;
+        width: 100%;
+        margin: 20px 0 35px;
+    }
+    
+}
+
+
+
+@media (max-width: 640px) {
+    .section-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 15vh;
+    }
+    .section-title_news {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    .section-title_news::after { 
+        content: "";
+        width: 67px;
+        height: 3px;
+        background: #e1d9bd;
+        position: absolute;
+        right: 25px;
+        top: 30px;
+    }
+    .side-bar {
+        margin: 0 15px;
+    }
+    .side-bar_post {
+        display: flex;
+        margin-bottom: 20px;
+
+    }
+    .post-info {
+        padding-left: 20px;
+    }
+    .side-bar_title {
+        margin: 0;
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
