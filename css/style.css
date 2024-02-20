@@ -635,7 +635,7 @@ body {
         background: #e1d9bd;
         position: absolute;
         right: 25px;
-        top: 35px;
+        top: 33px;
     }
     
     .side-bar_post {
@@ -685,8 +685,7 @@ body {
         opacity: 0.54;
     }
     .button {
-        width: 50px;
-        height: 50px;
+        width: 55px;
         background-color: #b59f5b;
         border: none;
         vertical-align: top; 
@@ -716,7 +715,7 @@ body {
         background: #e1d9bd;
         position: absolute;
         right: 11px;
-        top: 35px;
+        top: 33px;
     }
     .newsletter {
         width: 100%;
@@ -753,59 +752,69 @@ body {
         margin-bottom: 0;
         width: 67px;
         border-bottom: 3px solid #e1d9bd;
-        padding-bottom: 15px;
-        
-        
+        padding-bottom: 13px;
     } 
-}
+    .list-tags {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        list-style-type: none;
+        
+    }
+    .tag {
+        margin-right: 5px;
+        line-height: 35px;
+    }
     
+    .list-tags a {
+        font-size: 0.75rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: 3px solid #eeeeee;
+        padding: 5px 15px;
+        color: #000000;
+    }
+}
+@media (max-width: 640px) {
+    .topics-list_title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-bottom: 0;
+        width: 67px;
+        border-bottom: 3px solid #e1d9bd;
+        padding-bottom: 13px;
+    }
+    .topics-list {
+        margin: 0;
+        list-style-type: none;
+        width: 100%;
+    }
+    .topics-list a {
+        font-size: 0.875rem;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;  
+    }
+    .theme-list_style {
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: #b59f5b;
+        
+    }
+    .theme-list {
+        padding-top: 15px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #eeeeee;
+    }
+    .theme-list:first-child {
+        padding-top: 0;
 
+    }
 
-
-/* .list-tags {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 24px;
-    width: 272px;
-    list-style-type: none;
-    padding-left: 0;
-    font-size: 0px;
 }
 
-.list-tags a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bold;
-    color: #0f0d0e;
-    border-color: #eeeeee;
-    border-style: solid;
-    padding: 6px 14px 6px 14px;
-}
-.tag {
-    margin-top: 27px;
-    margin-right: 6px;   
-}
-.topics {
-    margin-top: 40px;
-    width: 272px;
-    list-style-type: none;
-    padding-left: 0;
-    font-size: 0;
-}
-.topics a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 14px;
-    font-weight: bold;
-    border-bottom: 1px solid #eeeeee;
-    display: flex;
-    align-items: center;
-    padding: 14px 0 14px 0;
-}
-.style {
-    color: #b59f5b;
-    font-size: 12px;
-    font-weight: bold;
-    margin-left: 6px;
-} */
