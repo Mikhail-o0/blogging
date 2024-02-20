@@ -693,7 +693,6 @@ body {
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 50%;
-
     }
     
     .mailing-title {
@@ -715,7 +714,7 @@ body {
         height: 3px;
         background: #e1d9bd;
         position: absolute;
-        right: 12px;
+        right: 11px;
         top: 30px;
     }
     .newsletter {
@@ -742,3 +741,70 @@ body {
     }   
 }
 
+@media (max-width: 640px) {
+    .title-for_tags {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 1rem;
+        margin-bottom: 0;
+        width: 67px;
+        border-bottom: 3px solid #e1d9bd;
+        padding-bottom: 15px;
+        
+        
+    } 
+}
+    
+
+
+
+/* .list-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    width: 272px;
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0px;
+}
+
+.list-tags a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0f0d0e;
+    border-color: #eeeeee;
+    border-style: solid;
+    padding: 6px 14px 6px 14px;
+}
+.tag {
+    margin-top: 27px;
+    margin-right: 6px;   
+}
+.topics {
+    margin-top: 40px;
+    width: 272px;
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0;
+}
+.topics a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    padding: 14px 0 14px 0;
+}
+.style {
+    color: #b59f5b;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 6px;
+} */
