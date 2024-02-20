@@ -635,7 +635,7 @@ body {
         background: #e1d9bd;
         position: absolute;
         right: 25px;
-        top: 30px;
+        top: 35px;
     }
     
     .side-bar_post {
@@ -675,6 +675,7 @@ body {
         background-color: #f4f7f6;
     }
     .search {
+        width: 100%;
         height: 50px;
         border: none;
         font-size: 0.813rem;
@@ -715,7 +716,7 @@ body {
         background: #e1d9bd;
         position: absolute;
         right: 11px;
-        top: 30px;
+        top: 35px;
     }
     .newsletter {
         width: 100%;
