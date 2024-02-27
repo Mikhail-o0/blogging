@@ -381,7 +381,7 @@ body {
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 13vw;
+        height: 100px;
     }
 
     .article-trend_title {
@@ -399,7 +399,7 @@ body {
         background: #e1d9bd;
         position: absolute;
         right: 40px;
-        top: 35px;
+        top: 33px;
     }
 
     .section-trend_content:nth-child(2n + 2) {
@@ -660,7 +660,7 @@ body {
 
     .main-position {
         display: flex;
-        margin: 50px 35px;
+        margin: 50px 35px 0;
     }
 
     .news-list {
@@ -1415,8 +1415,7 @@ body {
         position: absolute;
     }
     .product-card_block {
-        display: flex;
-        flex-direction: column;
+        
     }
     .section-product_card__title {
         text-transform: uppercase;
@@ -1479,7 +1478,140 @@ body {
         border: none;   
     }
 }
-@media (max-width: 640px) {
+@media screen and (min-width: 641px) and (max-width: 1200px) {
+    .product_card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        width: 100%;
+    }
+    .product_cards__title {
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        margin-bottom: 0;
+    }
+    .product_cards__title::after {
+        position: absolute;
+        content: "";
+        width: 67px;
+        height: 3px;
+        background: #e1d9bd;
+        top: 33px;
+        right: 44px;
+    }
+    .our-products {
+        max-width: 655px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .section-product_card {
+        max-width: 292px;
+        margin-top: 60px;
+    }
+    .section-product_card:nth-child(n+1):nth-child(-n+2) {
+        margin-top: 0;
+    }
+    .section-product_card:last-child {
+        margin-bottom: 80px;
+    }
+    .image-product {
+        max-width: 100%;
+    }
+    .product-card_content {
+        position: relative;
+    }
+    .product_card-pillow::after {
+        position: center;
+        content: "";
+        border: 3px solid #d3c59d;
+        width: 338px;
+        height: 265px;
+        top: -65px;
+        right: -21px;
+        position: absolute;
+    }
+    .product_card-doll::after {
+        position: center;
+        content: "";
+        border: 3px solid #d3c59d;
+        width: 338px;
+        height: 265px;
+        top: -65px;
+        right: -21px;
+        position: absolute;
+    }
+    .product_card-frame::after {
+        position: center;
+        content: "";
+        border: 3px solid #d3c59d;
+        width: 338px;
+        height: 265px;
+        top: -65px;
+        right: -21px;
+        position: absolute;
+    }
+    .section-product_card__title {
+        text-transform: uppercase;
+        margin: 25px 0 7px;
+        font-size: 1.063rem;  
+    }
+    .product-card_text {
+        font-size: 0.938rem;
+        margin-bottom: 25px;
+    }
+    .product-card_text p {
+        margin: 0;
+    }
+    .product-card_description {
+        color: #b59f5b;
+        text-decoration: none;
+    }
+    .product-card_block {
+
+    }
+    .product-card_description__style {
+        border-bottom: 1px solid #b59f5b; 
+    }
+    .product-card_link {
+        text-decoration: none;
+    }
+    .product_card-footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .product-prices {
+        display: flex;
+        flex-direction: column;
+    }
+    .product-price {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1;
+    }
+    .product-price_old {
+        font-size: 0.875rem;
+        text-decoration: line-through;
+    }
+    .product__button {
+        width: 140px;
+        height: 50px;
+        font-size: 0.875rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: inherit;
+        color: #ffffff;
+        background-color: #b59f5b;
+        border: none;   
+    }
+}
+@media (max-width: 640px), screen and (min-width: 641px) and (max-width: 1200px) {
     .content_footer {
         display: flex;
         flex-direction: column;
